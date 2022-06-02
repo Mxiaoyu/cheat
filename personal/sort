@@ -18,3 +18,9 @@ sort a b | uniq -d > c
 
 # c is set difference a - b
 sort a b b | uniq -u > c
+
+# 按照某一列排序
+sort -k n <file>
+
+# 指定分隔符
+sort -k 1 -t , <file>
